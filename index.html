@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <script defer src="script.js"></script>
+
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="title">
+        <h1>Welcome to Password Generator</h1>
+      </div>
+      <div class="container">
+            <div class="password-display">
+                    <input type="text" class="password-display-box" autocomplete="off" placeholder="Your password will show up here" READONLY/>
+            </div>
+            <div class="copy-reset-password" style="display: none;">
+              <button class="copy-button" id="function-password" style="margin-left: 15%;"> 
+                Copy
+              </button>
+              <button class="reset-button" id="function-password" style="margin-left: 25%;">
+                Reset
+              </button>
+            </div>
+            <div class="password-settings">
+              <div class="password-length">
+                <input type="range" min="0" max="64" step="1" id="length" name="length" onchange="updateTextInput(this.value, 'output-length');">
+                <div class="length-message">
+                  <output id="output-length" aria-valuenow="0"></output>
+                  <label class="length-label">Password Length : </label> 
+                </div>
+              </div>
+              <div class="password-numbers">
+                <input  type="checkbox" id="numbers" class="settings" name="numbers" autocomplete="off">
+                <label label for="numbers">Numbers (0-9)</label><br>
+              </div>
+              <div class="password-lowercase">
+                <input type="checkbox" id="lowercase" class="settings" name="lowercase" autocomplete="off">
+                  <label label for="lowercase">Lowercase (a-z)</label><br>
+              </div>
+              <div class="password-uppercase">
+                <input type="checkbox" id="uppercase" class="settings" name="uppercase" autocomplete="off">
+                  <label label for="uppercase">Uppercase (A-Z)</label><br>
+              </div>
+              <div class="password-symbols">
+                <input type="checkbox" id="symbols" class="settings" name="symbols" autocomplete="off">
+                  <label label for="symbols">Symbols (!@#$%^&*)</label><br>
+              </div>
+            </div>
+            <div class="generate-password">
+              <button class="generate-button"> 
+                Generate your password
+              </button>
+            </div>
+            <!-- <div class="copy-message show" id="message-alert">
+              <span>Password Copied!</span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

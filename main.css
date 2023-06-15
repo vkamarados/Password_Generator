@@ -1,0 +1,104 @@
+body{
+    background-color: #5cdb95;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #05386b;
+}
+
+main{
+  margin: auto;
+  width:600px;
+}
+
+.title{
+    text-align: center;
+}
+.container{
+    max-width: 300px;
+    margin: auto;
+}
+
+.password-display-box{
+    width: 286px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 2px solid #05386b;
+    background-color: #edf5e1;
+    color: #05386b;
+    outline: none;
+}
+
+.password-display-box::selection { 
+    background: #edf5e1;
+}
+
+.copy-reset-password{
+    margin-bottom: 8px;
+}
+
+#function-password {
+    border-radius: 22px;
+    height: 22px;
+    width: 60px;
+    font-size: 12px;
+    background-color: #edf5e1;
+    border-color: #05386b;
+    color: #05386b;
+}
+
+.generate-button {
+    border-radius: 22px;
+    height: 40px;
+    width: 280px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: #edf5e1;
+    border-color: #05386b;
+    color: #05386b;
+}
+
+.length-message{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#length{
+    width: 300px;
+    accent-color: #05386b;
+}
+
+output{
+    order: 2;
+    margin-left: 5px;
+}
+
+.length-label{
+    order: 1;
+}
+
+label{
+    margin-left: 5px;
+}
+
+.copy-message{
+    width: 200px;
+    height: 50px;
+    border-radius: 22px;
+    background-color: red;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.hide{
+    display: none;
+}
